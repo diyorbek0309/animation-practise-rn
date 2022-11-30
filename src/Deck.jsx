@@ -1,7 +1,6 @@
 import { View } from "react-native";
-import { IDeck } from "./types/Props.interface";
 
-const Deck = ({ data, renderCard }: IDeck) => {
+const Deck = ({ data, renderCard }) => {
   return <View>{data.map(renderCard)}</View>;
 };
 
