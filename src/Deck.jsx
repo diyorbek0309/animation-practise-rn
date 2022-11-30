@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
-console.log(SCREEN_WIDTH);
 const SWIPE_THRESHOLD = 0.25 * SCREEN_WIDTH;
 const SWIPE_OUT_DURATION = 300;
 
@@ -108,7 +107,7 @@ const Deck = ({ data, showCard, renderNoMoreCards }) => {
         return (
           <Animated.View
             key={item.id}
-            style={[styles.cardStyle, { top: 10 * (i - index), zIndex: 5 }]}
+            style={[styles.cardStyle, { top: 3 * (i - index), zIndex: 5 }]}
           >
             {showCard(item)}
           </Animated.View>

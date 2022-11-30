@@ -1,21 +1,20 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { Card, Button } from "react-native-elements";
+import { StyleSheet, Text, View, Image } from "react-native";
+import { Card, Button } from "@rneui/themed";
 import Deck from "./src/Deck";
 import { DATA } from "./data";
 
 export default function App() {
   const renderCard = (item) => (
-    <Card
-      key={item.id}
-      title={item.text}
-      image={require("./assets/image1.jpg")}
-    >
+    <Card>
+      <Card.Title>{item.text}</Card.Title>
+      <Image source={item.uri} style={styles.image} />
       <Button
         icon={{ name: "code" }}
         backgroundColor="#03A9F4"
         title="View now!"
       />
+      <Text style={styles.text}>I don't know what to write here:)</Text>
     </Card>
   );
 
@@ -40,9 +39,18 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 60,
     flex: 1,
     backgroundColor: "#fff",
-    justifyContent: "center",
+  },
+  image: {
+    width: 300,
+    height: 300,
+    marginBottom: 10,
+  },
+  text: {
+    fontSize: 20,
+    textAlign: "center",
+    marginTop: 10,
   },
 });

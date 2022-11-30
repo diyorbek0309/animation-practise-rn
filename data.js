@@ -1,42 +1,44 @@
+import image from "./assets/image1.jpg";
+
 export const DATA = [
   {
     id: 1,
     text: "Card #1",
-    uri: "https://images.freeimages.com/images/large-previews/ced/fall-in-qom-province-1640644.jpg",
+    uri: image,
   },
   {
     id: 2,
     text: "Card #2",
-    uri: "https://images.freeimages.com/images/large-previews/ced/fall-in-qom-province-1640644.jpg",
+    uri: image,
   },
   {
     id: 3,
     text: "Card #3",
-    uri: "https://images.freeimages.com/images/large-previews/ced/fall-in-qom-province-1640644.jpg",
+    uri: image,
   },
   {
     id: 4,
     text: "Card #4",
-    uri: "http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-01.jpg",
+    uri: image,
   },
   {
     id: 5,
     text: "Card #5",
-    uri: "http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-04.jpg",
+    uri: image,
   },
   {
     id: 6,
     text: "Card #6",
-    uri: "http://www.fluxdigital.co/wp-content/uploads/2015/04/Unsplash.jpg",
+    uri: image,
   },
   {
     id: 7,
     text: "Card #7",
-    uri: "http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-09.jpg",
+    uri: image,
   },
   {
     id: 8,
     text: "Card #8",
-    uri: "http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-01.jpg",
+    uri: image,
   },
 ];
